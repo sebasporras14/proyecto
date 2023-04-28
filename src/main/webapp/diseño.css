@@ -1,0 +1,8 @@
+.glassdiv{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 40px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(8px);
+}

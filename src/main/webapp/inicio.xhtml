@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </f:facet>
+        <title>PrimeFaces Omega</title>
+    </h:head>
+
+    <h:body styleClass="login-body">
+    <div class="glassdiv" style="background-color: aqua;">
+        <div class="card">
+            <h:form>
+        
+                <p:menubar>
+                    <p:menuitem value="Inicio" icon="pi pi-home"/>
+                    <p:divider layout="vertical"/>
+                    <p:menuitem value="Sobre nosotros" icon="pi pi-user"/>
+        
+                    <p:divider layout="vertical"/>
+                    <p:menuitem value="FQ" icon="pi pi-fw pi-question-circle"/>
+        
+        
+                    <p:divider layout="vertical"/>
+        
+                    <p:menuitem value="Contactanos" icon="pi pi-phone"/>
+        
+                    <f:facet name="options">
+                        <p:button outcome="login" value="Log in" icon="pi pi-fw pi-sign-out" styleClass="ui-button-info"/>
+                    </f:facet>
+                </p:menubar>
+            </h:form>
+        </div>
+        <p:button outcome="dashboard" value="Agende su consulta" style="width: 400px;height: 200px;background-color: rgb(60, 144, 240); left: 50px; top: 700px; font-size:50px;font-family: Arial, Helvetica, sans-serif; box-shadow: 8px 10px 10px 1px rgba(40, 57, 65, 0.5) ; border: 0ch; border-radius: 20px; display:scroll; position: fixed;" />
+    </div>
+        <h:outputStylesheet name="css/primeicons.css" library="omega-layout"/>
+        <h:outputStylesheet name="css/primeflex.min.css" library="omega-layout"/>
+        <h:outputStylesheet name="css/layout-#{guestPreferences.layout}.css" library="omega-layout"/>
+    </h:body>
+
+</html>
